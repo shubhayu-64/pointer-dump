@@ -46,3 +46,5 @@ npm run build
 ```
 
 Push the repo to GitHub and import it into Vercel—defaults work out of the box.
+
+Need a quick preview? Run `npx vercel dev` after logging in with the Vercel CLI to spin up a local preview that mirrors production.
