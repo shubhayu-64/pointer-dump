@@ -77,7 +77,7 @@ export default function Home() {
             </div>
           </div>
 
-          <aside className="rounded-3xl border border-[var(--color-border)] bg-[color:var(--color-surface)] p-6 backdrop-blur">
+          <aside className="rounded-3xl border border-[var(--color-border)] bg-[var(--color-surface)] p-6 backdrop-blur">
             <div className="flex flex-col gap-6">
               <div>
                 <p className="text-xs uppercase tracking-[0.3em] text-[var(--color-muted)]">
@@ -95,7 +95,7 @@ export default function Home() {
                   {profile.toolkit.map((tool) => (
                     <span
                       key={tool}
-                      className="rounded-full border border-[var(--color-border)] bg-[color:var(--color-surface-soft)] px-3 py-1 text-xs text-[var(--color-muted)]"
+                      className="rounded-full border border-[var(--color-border)] bg-[var(--color-surface-soft)] px-3 py-1 text-xs text-[var(--color-muted)]"
                     >
                       {tool}
                     </span>
@@ -150,7 +150,7 @@ export default function Home() {
 
       <footer
         id="contact"
-        className="border-t border-[var(--color-border)]/60 bg-[color:var(--color-surface-soft)]"
+        className="border-t border-[var(--color-border)]/60 bg-[var(--color-surface-soft)]"
       >
         <div className="mx-auto flex w-full max-w-5xl flex-col gap-8 px-6 py-12 md:flex-row md:items-center md:justify-between">
           <div className="space-y-3">
@@ -222,7 +222,7 @@ function ResourceCard({ resource }: { resource: Resource }) {
     resource.href.startsWith("http") || resource.href.startsWith("mailto:");
 
   const content = (
-    <div className="flex h-full flex-col gap-4 rounded-3xl border border-[var(--color-border)] bg-[color:var(--color-surface)] p-6 transition duration-200 hover:-translate-y-1 hover:border-[var(--color-accent)] hover:shadow-[0_25px_70px_rgba(15,23,42,0.55)]">
+    <div className="flex h-full flex-col gap-4 rounded-3xl border border-[var(--color-border)] bg-[var(--color-surface)] p-6 transition duration-200 hover:-translate-y-1 hover:border-[var(--color-accent)] hover:shadow-[0_25px_70px_rgba(15,23,42,0.55)]">
       <div className="flex items-center justify-between text-xs uppercase tracking-[0.3em] text-[var(--color-muted)]">
         <span>{resource.meta}</span>
         <span>↗</span>
@@ -267,7 +267,7 @@ function ArticleCard({ article }: { article: Article }) {
       href={article.href}
       target={article.href.startsWith("http") ? "_blank" : undefined}
       rel={article.href.startsWith("http") ? "noopener noreferrer" : undefined}
-      className="flex h-full flex-col gap-4 rounded-3xl border border-[var(--color-border)] bg-[color:var(--color-surface)] p-6 transition duration-200 hover:-translate-y-1 hover:border-[var(--color-accent)] hover:shadow-[0_25px_70px_rgba(15,23,42,0.55)]"
+      className="flex h-full flex-col gap-4 rounded-3xl border border-[var(--color-border)] bg-[var(--color-surface)] p-6 transition duration-200 hover:-translate-y-1 hover:border-[var(--color-accent)] hover:shadow-[0_25px_70px_rgba(15,23,42,0.55)]"
     >
       <div className="flex items-center justify-between text-xs uppercase tracking-[0.3em] text-[var(--color-muted)]">
         <span>{article.published}</span>
@@ -290,7 +290,7 @@ function ArticleCard({ article }: { article: Article }) {
 
 function Tag({ children }: { children: React.ReactNode }) {
   return (
-    <span className="inline-flex items-center rounded-full border border-[var(--color-border)] bg-[color:var(--color-surface-soft)] px-3 py-1 text-xs text-[var(--color-muted)]">
+    <span className="inline-flex items-center rounded-full border border-[var(--color-border)] bg-[var(--color-surface-soft)] px-3 py-1 text-xs text-[var(--color-muted)]">
       {children}
     </span>
   );
